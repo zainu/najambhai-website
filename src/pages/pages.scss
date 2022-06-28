@@ -1,9 +1,9 @@
 $Roboto-family:"Roboto",sans-serif;
-$theme-black-color: #000;
 $theme-blue-color:blue;
 $theme-orange-color:orange;
 $theme-red-color:red;
-
+$theme-black-color:#000;
+$theme-orange-gradient-color:#ffa50040;
 // common clasees
 .para-text{
     font-size: 1.6rem;
@@ -11,6 +11,9 @@ $theme-red-color:red;
     letter-spacing: 0.01em;
     text-align: center;
     margin-bottom: 0;
+    @media (max-width:767px) {
+        font-size: 14px;
+    }
 }
 .main-title{
     font-family: $Roboto-family;
@@ -19,6 +22,10 @@ $theme-red-color:red;
     font-weight: 900;
     letter-spacing: -0.03em;
     text-align: center;
+    color: $theme-blue-color;
+    @media (max-width:767px) {
+        font-size: 2rem;
+    }
 }
 .sub-title{
     font-family: $Roboto-family;
@@ -30,7 +37,8 @@ $theme-red-color:red;
 }
 .btn{
     &.btn-primary{
-        background-color: rgb(52, 120, 246);
+        background-color: $theme-orange-color;
+        border: 1px solid $theme-orange-color;
         color:#fff;
         border-radius: 50px;
         padding: 13px 25px;
@@ -106,6 +114,9 @@ $theme-red-color:red;
             margin-bottom: 30px;
             span{
                 color: $theme-blue-color;
+                background: linear-gradient(90deg, $theme-blue-color 19%, $theme-blue-color 76%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
             }
         }
         p{
@@ -132,38 +143,263 @@ $theme-red-color:red;
         .main-title{
             padding: 0 50px;
             margin-bottom: 2.5rem;
-            color: $theme-blue-color;
         }
         .para-text{
             padding: 0 30px;
             margin-bottom: 50px;
         }
         .btn{
-            background: $theme-orange-color;
-            border: 1px solid $theme-orange-color;
+            
         }
     }
     .showcase-section{
-        background-color: #000;
+        background-color: $theme-black-color;
         padding: 80px 0;
         .main-title{
-            color: $theme-blue-color;
+            padding: 0 50px;
+            margin-bottom: 30px;
+        }
+        .para-text{
+            padding: 0 50px;
+            color: #fff;
+            margin-bottom: 60px;
+        }
+        .showcase-inner{
+            margin-bottom: 30px;
+            .showcase-card{
+                h5{
+                    color: #fff;
+                    font-family: $Roboto-family;
+                    font-size: 28px;
+                    font-weight: 600;
+                }
+                label{
+                    color: $theme-orange-color;
+                    font-size: 26px;
+                    margin-bottom: 10px;
+                    font-weight: 700;
+
+                }
+                p{
+                    color: #fff;
+                    font-family: $Roboto-family;
+                    font-weight: 500;
+                    font-size: 14px;
+                }
+            }
+        }
+        .games-section{
+            h2{
+                font-size: 38px;
+                color: #fff;
+                font-family: $Roboto-family;
+                font-weight: 600;
+                margin-bottom: 30px;
+                text-align: left;
+                padding-left: 0;
+            }
+            .games-slider{
+                padding: 0 20px;
+                .slick-slide{
+                    > div{
+                        margin: 0 10px;
+                    }
+                }
+                .slick-list{
+                    margin: 0 -5px;
+                }
+                .slick-prev:before, .slick-next:before{
+                    color: $theme-orange-color;
+                }
+                .card{
+                    overflow: hidden;
+                    height: auto;
+                    background-color: $theme-black-color;
+                    .card-top{
+                        position: relative;
+                        > img{
+                            width: 100%;
+                            min-height: 400px;
+                            object-fit: cover;
+                            border-radius: 10px;
+                        }
+                        label{
+                            position: absolute;
+                            content: "";
+                            background: $theme-orange-color;
+                            color: #fff;
+                            border-radius: 8px;
+                            padding: 3px 10px;
+                            bottom: 10px;
+                            left: 10px;
+                        }
+                    }
+                    .card-bottom{
+                        h3{
+                            font-size: 20px;
+                            color: #fff;
+                            font-weight: 600;
+                            margin: 10px 0;
+                        }
+                        h5{
+                            font-size: 16px;
+                            color: #fff;
+                            font-weight: 400;
+                        }
+                        a{
+                            color: $theme-orange-color;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .doa-section{
+        padding: 80px 0;
+        background-color: rgb(241, 241, 245);
+        text-align: center;
+        .main-title{
+            margin-bottom: 30px;
+        }
+        .para-text{
             padding: 0 50px;
             margin-bottom: 40px;
         }
-        .para-text{
-            color: #fff;
-            padding: 0 40px;
-            margin-bottom: 40px;
+    }
+    .news-section{
+        padding: 80px 0;
+        .main-title{
+            font-size: 45px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            padding-left: 0;
+        }
+        .news-slider{
+            padding: 0 20px;
+            .slick-slide{
+                > div{
+                    margin: 0 10px;
+                }
+            }
+            .slick-dots{
+                li{
+                    button{
+                        &::before{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            } 
+            .slick-prev:before, .slick-next:before{
+                color: $theme-black-color;
+                font-size: 30px;
+            }
+            .news-card{
+                img{
+                    width: 100%;
+                    min-height: 300px;
+                    object-fit: cover;
+                    border-radius: 15px;
+                }
+            }
         }
     }
 }
-.about-section{
-    padding: 100px 70px 80px;
-    h2{
-        margin-bottom: 30px;
+.about-page{
+    .about-section{
+        padding: 100px 70px 80px;
+        @media (max-width:767px) {
+            padding: 50px 10px 50px;
+        }
+        h2{
+            margin-bottom: 30px;
+            @media (max-width:767px) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .team-section{
+        padding-bottom: 50px;
+        .main-title{
+            span{
+                color: $theme-blue-color;
+            }
+        }
+    }
+    .team-cards{
+        align-items: center;
+        position: relative;
+        @media (max-width:767px) {
+            margin-bottom: 20px;
+        }
+        .card-img-top{
+            border-radius: 50%;
+            border: 5px solid $theme-blue-color;
+            width: 160px;
+            margin-top: 20px;
+            z-index: 1;
+            @media (max-width:767px) {
+                width: 140px;
+            }
+        }
+        .card-body{
+            padding-bottom: 0;
+            text-align: center;
+            z-index: 1;
+            h3{
+                font-family: $Roboto-family;
+                font-weight: 600;
+                color: $theme-blue-color;
+                font-size: 22px;
+                text-transform: uppercase;
+                min-height: 50px;
+                @media (max-width:767px) {
+                    min-height: 0;
+                }
+            }
+            h5{
+                font-family: $Roboto-family;
+                font-weight: 600;
+                color: $theme-blue-color;
+                font-size: 14px;
+                text-transform: uppercase;
+            }
+            p{
+                font-size: 12px;
+                &.general-info{
+                    min-height: 180px;
+                    @media (max-width:767px) {
+                        min-height: 0;
+                    }
+                }
+            }
+            ul{
+                display: flex;
+                justify-content: center;
+                list-style-type: none;
+                padding-left: 0;
+                li{
+                    padding: 0 5px;
+                    font-size: 25px;
+                    a{
+                        text-decoration: none;
+                        color: $theme-black-color;
+                    }
+                }
+            }
+        }
+        &:after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 85%;
+            background-color: $theme-orange-gradient-color;
+            bottom: 0;
+        }
     }
 }
+
 .contact-page{
     padding: 100px 0;
     .contact-section{

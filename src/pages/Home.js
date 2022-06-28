@@ -7,8 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {data} from '../data/data';
 const Home = ()=>{
-    const settings = {
-        dots: true,
+    const gamesSlider = {
         infinite: false,
         speed: 500,
         slidesToShow: 4,
@@ -40,7 +39,41 @@ const Home = ()=>{
             }
           }
         ]
-      };
+    };
+    const newsSlider = {
+        dots:true,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        initialSlide: 0,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              initialSlide: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+    };
     return(
         <>
         <Header/>
@@ -73,7 +106,7 @@ const Home = ()=>{
                     <Container>
                         <h2 className="main-title">From play-to-win to play-to-earn</h2>
                         <p className="para-text">Through ownership and rewarding merit, games are now governed by the players. Innovative in-game economics reward players for their performance, creating a new economy in the Metaverse.</p>
-                        <Row>
+                        <Row className="showcase-inner">
                             <Col lg={4} md={4} className="showcase-card">
                                 <h5>Total gamers</h5>
                                 <label>3750</label>
@@ -90,7 +123,7 @@ const Home = ()=>{
                                 <p>We are proudly managing gamers from Asia, Africa, Europe, South-America daily earnings rewards through playing various games</p>
                             </Col>        
                         </Row>
-                        <Row>
+                        <Row className="showcase-inner">
                             <Col lg={4} md={4} className="showcase-card">
                                 <h5>Total gamers</h5>
                                 <label>3750</label>
@@ -107,61 +140,127 @@ const Home = ()=>{
                                 <p>We are proudly managing gamers from Asia, Africa, Europe, South-America daily earnings rewards through playing various games</p>
                             </Col>        
                         </Row>
-                        <Row>
-                            <div className="coursel-title d-flex align-item-center">
-                                <h2>Games we're playing</h2>
-                            </div>
+                        <Row className="games-section">
                             <div>
-                            <Slider {...settings}>
-                                <div>
-                                    <h3>1</h3>
+                                <h2 className="main-title">Games we're playing</h2>
+                            </div>
+                            <div className="games-slider">
+                                <Slider {...gamesSlider}>
+                                <div className="card">
+                                    <div className="card-top">
+                                        <img src="https://meritcircle.io/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F6s34139m1605%2FXfZUBAdae7FjmqAJqldPn%2Fe724b76f67e3b132d4d19e8d44e553fc%2Fezgif-5-00ca3580ae.webp%3Ffm%3Dwebp%26h%3D540&w=1080&q=75"/>
+                                        <label>Live</label>
+                                    </div>
+                                    <div className="card-bottom">
+                                        <h3>Sidus Heroes</h3>
+                                        <h5>RPG</h5>
+                                        <a href="#">View website</a>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h3>2</h3>
+                                <div className="card">
+                                    <div className="card-top">
+                                        <img src="https://meritcircle.io/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F6s34139m1605%2FXfZUBAdae7FjmqAJqldPn%2Fe724b76f67e3b132d4d19e8d44e553fc%2Fezgif-5-00ca3580ae.webp%3Ffm%3Dwebp%26h%3D540&w=1080&q=75"/>
+                                        <label>Upcoming</label>
+                                    </div>
+                                    <div className="card-bottom">
+                                        <h3>Sidus Heroes</h3>
+                                        <h5>RPG</h5>
+                                        <a href="#">View website</a>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h3>3</h3>
+                                <div className="card">
+                                    <div className="card-top">
+                                        <img src="https://meritcircle.io/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F6s34139m1605%2FXfZUBAdae7FjmqAJqldPn%2Fe724b76f67e3b132d4d19e8d44e553fc%2Fezgif-5-00ca3580ae.webp%3Ffm%3Dwebp%26h%3D540&w=1080&q=75"/>
+                                        <label>Upcoming</label>
+                                    </div>
+                                    <div className="card-bottom">
+                                        <h3>Sidus Heroes</h3>
+                                        <h5>RPG</h5>
+                                        <a href="#">View website</a>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h3>4</h3>
+                                <div className="card">
+                                    <div className="card-top">
+                                        <img src="https://meritcircle.io/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F6s34139m1605%2FXfZUBAdae7FjmqAJqldPn%2Fe724b76f67e3b132d4d19e8d44e553fc%2Fezgif-5-00ca3580ae.webp%3Ffm%3Dwebp%26h%3D540&w=1080&q=75"/>
+                                        <label>Upcoming</label>
+                                    </div>
+                                    <div className="card-bottom">
+                                        <h3>Sidus Heroes</h3>
+                                        <h5>RPG</h5>
+                                        <a href="#">View website</a>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h3>5</h3>
-                                </div>
-                                <div>
-                                    <h3>6</h3>
-                                </div>
-                                <div>
-                                    <h3>7</h3>
-                                </div>
-                                <div>
-                                    <h3>8</h3>
+                                <div className="card">
+                                    <div className="card-top">
+                                        <img src="https://meritcircle.io/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F6s34139m1605%2FXfZUBAdae7FjmqAJqldPn%2Fe724b76f67e3b132d4d19e8d44e553fc%2Fezgif-5-00ca3580ae.webp%3Ffm%3Dwebp%26h%3D540&w=1080&q=75"/>
+                                        <label>Upcoming</label>
+                                    </div>
+                                    <div className="card-bottom">
+                                        <h3>Sidus Heroes</h3>
+                                        <h5>RPG</h5>
+                                        <a href="#">View website</a>
+                                    </div>
                                 </div>
                                 </Slider>
                             </div>
                         </Row>
                     </Container>
                 </div>
-                        <div className="doa-section">
-                            <Row>
-                                <Col lg={12} md={12}>
-                                    <h2>Decentralized Autonomous.</h2>
-                                    <p>Merit Circle is a decentralized autonomous organization meaning every single person that holds $MC tokens holds voting rights to decide on the future of the organization.</p>
-                                    <button>Learn more abou DAO</button>
-                                </Col>
-                            </Row>
-                        </div>
-                        <div className="news-section">
-                            <Row>
-                                <div className="coursel-title d-flex align-item-center">
-                                    <h2>Recent News</h2>
+                <div className="doa-section">
+                    <Container>
+                        <Row>
+                            <Col lg={12} md={12}>
+                                <h2 className="main-title">Decentralized Autonomous.</h2>
+                                <p className="para-text">Merit Circle is a decentralized autonomous organization meaning every single person that holds $MC tokens holds voting rights to decide on the future of the organization.</p>
+                                <button className="btn btn-primary">Learn more abou DAO</button>
+                            </Col>
+                        </Row>
+                    </Container>
+                </div>
+                <div className="news-section">
+                    <Container>
+                        <Row>
+                            <h2 className="main-title">Recent News</h2>
+                            <div className="news-slider">
+                            <Slider {...newsSlider}>
+                                <div className="news-card">
+                                    <img src="https://cdn-images-1.medium.com/max/1024/1*FXXGscvu8fCtYU3Gg88-cA.png"/>
                                 </div>
-                                <div>
-                                
+                                <div className="news-card">
+                                    <img src="https://cdn-images-1.medium.com/max/1024/1*FXXGscvu8fCtYU3Gg88-cA.png"/>
                                 </div>
-                            </Row>
-                        </div>
-                    
+                                <div className="news-card">
+                                    <img src="https://cdn-images-1.medium.com/max/1024/1*FXXGscvu8fCtYU3Gg88-cA.png"/>
+                                </div>
+                                <div className="news-card">
+                                    <img src="https://cdn-images-1.medium.com/max/1024/1*FXXGscvu8fCtYU3Gg88-cA.png"/>
+                                </div>
+                                <div className="news-card">
+                                    <img src="https://cdn-images-1.medium.com/max/1024/1*FXXGscvu8fCtYU3Gg88-cA.png"/>
+                                </div>
+                                </Slider>
+                            </div>
+                        </Row>
+                    </Container>
+                </div> 
+                <div className="newsletter-section">
+                    <Container>
+                        <Row>
+                            <div className="newsletter">
+                                <h2 className="main-title">
+                                Keep up to date.
+                                </h2>
+                                <p className="para-text">
+                                Be the first to know what’s going on in our Metaverse.
+                                </p>
+                                <form>
+                                    <input type="text" placeholder="Email"/>
+                                    <button type="submit" className="btn btn-primary">Subscribe</button>
+                                </form>
+                            </div>
+                        </Row>
+                    </Container>
+                </div>    
             </div>    
         <Footer/>
         </>
