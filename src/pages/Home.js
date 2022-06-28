@@ -2,8 +2,45 @@ import React from "react";
 import Footer from "../layout/Footer";
 import Header from "../layout/Header";
 import { Row,Container,Col} from 'react-bootstrap';
-
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import {data} from '../data/data';
 const Home = ()=>{
+    const settings = {
+        dots: true,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        initialSlide: 0,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              initialSlide: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      };
     return(
         <>
         <Header/>
@@ -33,50 +70,77 @@ const Home = ()=>{
                     </Container>                    
                 </div>
                 <div className="showcase-section">
-                    <h2>From play-to-win to play-to-earn</h2>
-                    <p>Through ownership and rewarding merit, games are now governed by the players. Innovative in-game economics reward players for their performance, creating a new economy in the Metaverse.</p>
-                    <Row>
-                        <Col lg={4} md={4} className="showcase-card">
-                            <h5>Total gamers</h5>
-                            <label>3750</label>
-                            <p>We are proudly managing gamers from Asia, Africa, Europe, South-America daily earnings rewards through playing various games</p>
-                        </Col>
-                        <Col lg={4} md={4} className="showcase-card">
-                            <h5>Total gamers</h5>
-                            <label>3750</label>
-                            <p>We are proudly managing gamers from Asia, Africa, Europe, South-America daily earnings rewards through playing various games</p>
-                        </Col>
-                        <Col lg={4} md={4} className="showcase-card">
-                            <h5>Total gamers</h5>
-                            <label>3750</label>
-                            <p>We are proudly managing gamers from Asia, Africa, Europe, South-America daily earnings rewards through playing various games</p>
-                        </Col>        
-                    </Row>
-                    <Row>
-                        <Col lg={4} md={4} className="showcase-card">
-                            <h5>Total gamers</h5>
-                            <label>3750</label>
-                            <p>We are proudly managing gamers from Asia, Africa, Europe, South-America daily earnings rewards through playing various games</p>
-                        </Col>
-                        <Col lg={4} md={4} className="showcase-card">
-                            <h5>Total gamers</h5>
-                            <label>3750</label>
-                            <p>We are proudly managing gamers from Asia, Africa, Europe, South-America daily earnings rewards through playing various games</p>
-                        </Col>
-                        <Col lg={4} md={4} className="showcase-card">
-                            <h5>Total gamers</h5>
-                            <label>3750</label>
-                            <p>We are proudly managing gamers from Asia, Africa, Europe, South-America daily earnings rewards through playing various games</p>
-                        </Col>        
-                    </Row>
-                    <Row>
-                        <div className="coursel-title d-flex align-item-center">
-                            <h2>Games we're playing</h2>
-                        </div>
-                        <div>
-                        
-                        </div>
-                    </Row>
+                    <Container>
+                        <h2 className="main-title">From play-to-win to play-to-earn</h2>
+                        <p className="para-text">Through ownership and rewarding merit, games are now governed by the players. Innovative in-game economics reward players for their performance, creating a new economy in the Metaverse.</p>
+                        <Row>
+                            <Col lg={4} md={4} className="showcase-card">
+                                <h5>Total gamers</h5>
+                                <label>3750</label>
+                                <p>We are proudly managing gamers from Asia, Africa, Europe, South-America daily earnings rewards through playing various games</p>
+                            </Col>
+                            <Col lg={4} md={4} className="showcase-card">
+                                <h5>Total gamers</h5>
+                                <label>3750</label>
+                                <p>We are proudly managing gamers from Asia, Africa, Europe, South-America daily earnings rewards through playing various games</p>
+                            </Col>
+                            <Col lg={4} md={4} className="showcase-card">
+                                <h5>Total gamers</h5>
+                                <label>3750</label>
+                                <p>We are proudly managing gamers from Asia, Africa, Europe, South-America daily earnings rewards through playing various games</p>
+                            </Col>        
+                        </Row>
+                        <Row>
+                            <Col lg={4} md={4} className="showcase-card">
+                                <h5>Total gamers</h5>
+                                <label>3750</label>
+                                <p>We are proudly managing gamers from Asia, Africa, Europe, South-America daily earnings rewards through playing various games</p>
+                            </Col>
+                            <Col lg={4} md={4} className="showcase-card">
+                                <h5>Total gamers</h5>
+                                <label>3750</label>
+                                <p>We are proudly managing gamers from Asia, Africa, Europe, South-America daily earnings rewards through playing various games</p>
+                            </Col>
+                            <Col lg={4} md={4} className="showcase-card">
+                                <h5>Total gamers</h5>
+                                <label>3750</label>
+                                <p>We are proudly managing gamers from Asia, Africa, Europe, South-America daily earnings rewards through playing various games</p>
+                            </Col>        
+                        </Row>
+                        <Row>
+                            <div className="coursel-title d-flex align-item-center">
+                                <h2>Games we're playing</h2>
+                            </div>
+                            <div>
+                            <Slider {...settings}>
+                                <div>
+                                    <h3>1</h3>
+                                </div>
+                                <div>
+                                    <h3>2</h3>
+                                </div>
+                                <div>
+                                    <h3>3</h3>
+                                </div>
+                                <div>
+                                    <h3>4</h3>
+                                </div>
+                                <div>
+                                    <h3>5</h3>
+                                </div>
+                                <div>
+                                    <h3>6</h3>
+                                </div>
+                                <div>
+                                    <h3>7</h3>
+                                </div>
+                                <div>
+                                    <h3>8</h3>
+                                </div>
+                                </Slider>
+                            </div>
+                        </Row>
+                    </Container>
                 </div>
                         <div className="doa-section">
                             <Row>
