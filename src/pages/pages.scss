@@ -1,0 +1,169 @@
+$Roboto-family:"Roboto",sans-serif;
+// common clasees
+.para-text{
+    font-size: 1.6rem;
+    line-height: 1.3em;
+    letter-spacing: 0.01em;
+    text-align: center;
+    margin-bottom: 0;
+}
+.main-title{
+    font-family: $Roboto-family;
+    font-size: 5rem;
+    line-height: 1em;
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    text-align: center;
+}
+.sub-title{
+    font-family: $Roboto-family;
+    font-size: 3.8rem;
+    line-height: 1em;
+    font-weight: 900;
+    letter-spacing: -0.03em;
+    text-align: center;
+}
+.btn{
+    &.btn-primary{
+        background-color: rgb(52, 120, 246);
+        color:#fff;
+        border-radius: 50px;
+        padding: 13px 25px;
+        font-size: 1rem;
+        line-height: 1em;
+        font-family: $Roboto-family;
+    }
+    .btn-warning{
+        
+    }
+}
+
+
+.header{
+    .navbar{
+        .navbar-collapse{
+            justify-content: flex-end;
+            .navbar-nav{
+                gap: 0.8rem;
+                a{
+                    text-decoration: none;
+                    font-family: $Roboto-family;
+                    letter-spacing: -0.03em;
+                    font-size: 1rem;
+                    line-height: 1.25em;
+                    color: #000;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+.footer{
+    padding: 50px 0;
+    background: rgba(255, 255, 255, 0.8);
+    ul{
+        &.site-map{
+            list-style-type: none;
+            h3{
+                color: #000;
+                margin-bottom: 0.8rem;
+                font-size: 16px;
+            }
+            li{
+                font-size: 14px;
+                margin-bottom: 0.8rem;
+                display: block;
+                color: rgba(0, 0, 0, 0.5) !important;
+                font-weight: 500;
+            }
+        }
+        &.social-icons{
+            display: inline-block;
+            list-style-type: none;
+            margin-right: 10px;
+        }
+    }
+}
+.home{
+    .hero-section{
+        padding: 100px 0 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        h2{
+            font-family: $Roboto-family;
+            font-size: 5rem;
+            line-height: 1em;
+            font-weight: 900;
+            letter-spacing: -0.03em;
+            text-align: center;
+            margin-bottom: 30px;
+            span{
+                color: rgb(236,135,65);
+                background: linear-gradient(90deg, rgba(236,135,65,1) 19%, rgba(242,172,75,0.90) 76%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        p{
+            font-size: 1.6rem;
+            line-height: 1.3em;
+            letter-spacing: 0.01em;
+            padding: 0 60px;
+            text-align: center;
+        }
+        .hero-animation{
+            svg{
+                margin-bottom: -400px;
+                animation: 16s linear 0s infinite normal none running;
+                margin-top: 6.4rem;
+                width: 814px;
+            }
+                   
+        }   
+    }
+    .content-section{
+        padding: 80px 0;
+        background: linear-gradient(rgb(241, 241, 245) 0%, rgb(255, 255, 255) 74.78%, rgb(255, 255, 255) 100%), rgb(255, 255, 255);
+        text-align: center;
+        .main-title{
+            padding: 0 50px;
+            margin-bottom: 2.5rem;
+        }
+        .para-text{
+            padding: 0 30px;
+            margin-bottom: 50px;
+        }
+        .btn{
+            
+        }
+    }
+}
+.about-section{
+    padding: 100px 70px 80px;
+    h2{
+        margin-bottom: 30px;
+    }
+}
+.contact-page{
+    padding: 100px 0;
+    .contact-section{
+        padding: 0 50px;
+        h2{
+            margin-bottom: 30px;
+        }
+    }
+    .contact-form{
+        padding: 50px 50px 0;
+        .form-control{
+            border: 1px solid #ced4daa6;
+            width: 100%;
+            outline: none;
+            background: rgba(240, 240, 240, 0.5);
+            backdrop-filter: blur(80px);
+            border-radius: 4px;
+            padding: 12px 15px;
+        }
+    }
+}
