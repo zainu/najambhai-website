@@ -6,7 +6,7 @@ const Footer = ()=>{
         <footer className="footer">
         <Container>
             <Row>
-                <Col lg={3} md={3} sm={12}>
+                <Col lg={3} md={3} sm={6} xs={6}>
                     <ul className="site-map">
                         <h3>Misc</h3>
                         <li>Staking</li>
@@ -16,7 +16,7 @@ const Footer = ()=>{
                         <li>Press Kit</li>
                     </ul>
                 </Col>
-                <Col lg={3} md={3} sm={12}>
+                <Col lg={3} md={3} sm={6} xs={6}>
                     <ul className="site-map">
                         <h3>About</h3>
                         <li>Overview</li>
@@ -26,7 +26,7 @@ const Footer = ()=>{
                         <li>Press Kit</li>
                     </ul>
                 </Col>
-                <Col lg={3} md={3} sm={12}>
+                <Col lg={3} md={3} sm={6} xs={6}>
                     <ul className="site-map">
                         <h3>Games</h3>
                         <li>Overview</li>
@@ -36,7 +36,7 @@ const Footer = ()=>{
                         <li>Press Kit</li>
                     </ul>
                 </Col>
-                <Col lg={3} md={3} sm={12}>
+                <Col lg={3} md={3} sm={6} xs={6}>
                     <ul className="site-map">
                         <h3>Contact</h3>
                         <li>Contact US</li>

@@ -82,8 +82,8 @@ const Home = ()=>{
                     <Container>
                         <Row>
                             <Col lg={12} md={12}>
-                                <h2>Together, we build<br/> the <span>Metaverse</span></h2>
-                                <p>We are a decentralized autonomous organization on a mission to revolutionize gaming. Let's build the metaverse by empowering people to be a part of it.</p>
+                                <h2 className="main-title">Together, we build<br/> the <span>Metaverse</span></h2>
+                                <p className="para-text">We are a decentralized autonomous organization on a mission to revolutionize gaming. Let's build the metaverse by empowering people to be a part of it.</p>
                                 {/* <div className="hero-animation">
                                     <svg width="814" height="814" viewBox="0 0 814 814" fill="none" xmlns="http://www.w3.org/2000/svg" class="sc-3305b5b3-2 hMVClG"><path fill-rule="evenodd" clip-rule="evenodd" d="M569.795 651.201C703.313 651.201 811.804 544.045 813.96 411.041L813.993 407.003C813.993 631.781 631.774 813.999 406.996 813.999C182.219 813.999 0 631.781 0 407.003H325.597C325.597 541.869 434.928 651.201 569.795 651.201Z" fill="url(#paint0_linear_1024_1042)"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M244.205 651.194C110.687 651.194 2.19603 544.039 0.0395641 411.035L0.00683594 406.996C0.00683594 631.774 182.226 813.993 407.004 813.993C631.781 813.993 814 631.774 814 406.996H488.403C488.403 541.863 379.072 651.194 244.205 651.194Z" fill="url(#paint1_linear_1024_1042)"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M244.205 162.798C110.687 162.798 2.19603 269.954 0.0395641 402.958L0.00683594 406.996C0.00683594 182.218 182.226 0 407.004 0C631.781 0 814 182.218 814 406.996H488.403C488.403 272.13 379.072 162.798 244.205 162.798Z" fill="url(#paint2_linear_1024_1042)"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M569.795 162.805C703.313 162.805 811.804 269.96 813.96 402.964L813.993 407.003C813.993 182.225 631.774 0.00634766 406.996 0.00634766C182.219 0.00634766 0 182.225 0 407.003H325.597C325.597 272.136 434.928 162.805 569.795 162.805Z" fill="url(#paint3_linear_1024_1042)"></path><defs><linearGradient id="paint0_linear_1024_1042" x1="178.061" y1="407.003" x2="190.78" y2="813.999" gradientUnits="userSpaceOnUse"><stop stop-color="#EF9146"></stop><stop offset="1" stop-color="#E0592E"></stop></linearGradient><linearGradient id="paint1_linear_1024_1042" x1="407.004" y1="406.996" x2="407.004" y2="813.993" gradientUnits="userSpaceOnUse"><stop stop-color="#E57722"></stop><stop offset="1" stop-color="#F2B24C"></stop></linearGradient><linearGradient id="paint2_linear_1024_1042" x1="597.447" y1="406.996" x2="597.447" y2="-17.2781" gradientUnits="userSpaceOnUse"><stop stop-color="#E57722"></stop><stop offset="1" stop-color="#DD4A33"></stop></linearGradient><linearGradient id="paint3_linear_1024_1042" x1="165.342" y1="407.003" x2="165.342" y2="0.00634766" gradientUnits="userSpaceOnUse"><stop stop-color="#EF9046"></stop><stop offset="1" stop-color="#F3C44F"></stop></linearGradient></defs></svg>
                                 </div> */}
@@ -148,55 +148,55 @@ const Home = ()=>{
                                 <Slider {...gamesSlider}>
                                 <div className="card">
                                     <div className="card-top">
-                                        <img src="https://meritcircle.io/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F6s34139m1605%2FXfZUBAdae7FjmqAJqldPn%2Fe724b76f67e3b132d4d19e8d44e553fc%2Fezgif-5-00ca3580ae.webp%3Ffm%3Dwebp%26h%3D540&w=1080&q=75"/>
+                                        <img src={process.env.PUBLIC_URL+"images/main/axie-infinity.png"}/>
                                         <label>Live</label>
                                     </div>
                                     <div className="card-bottom">
-                                        <h3>Sidus Heroes</h3>
+                                        <h3>Axie Infinity</h3>
                                         <h5>RPG</h5>
                                         <a href="#">View website</a>
                                     </div>
                                 </div>
                                 <div className="card">
                                     <div className="card-top">
-                                        <img src="https://meritcircle.io/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F6s34139m1605%2FXfZUBAdae7FjmqAJqldPn%2Fe724b76f67e3b132d4d19e8d44e553fc%2Fezgif-5-00ca3580ae.webp%3Ffm%3Dwebp%26h%3D540&w=1080&q=75"/>
+                                        <img src={process.env.PUBLIC_URL+"images/main/genopets.png"} />
                                         <label>Upcoming</label>
                                     </div>
                                     <div className="card-bottom">
-                                        <h3>Sidus Heroes</h3>
+                                        <h3>Genopets</h3>
                                         <h5>RPG</h5>
                                         <a href="#">View website</a>
                                     </div>
                                 </div>
                                 <div className="card">
                                     <div className="card-top">
-                                        <img src="https://meritcircle.io/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F6s34139m1605%2FXfZUBAdae7FjmqAJqldPn%2Fe724b76f67e3b132d4d19e8d44e553fc%2Fezgif-5-00ca3580ae.webp%3Ffm%3Dwebp%26h%3D540&w=1080&q=75"/>
+                                        <img src={process.env.PUBLIC_URL+"images/main/gods-unchained.png"} />
                                         <label>Upcoming</label>
                                     </div>
                                     <div className="card-bottom">
-                                        <h3>Sidus Heroes</h3>
+                                        <h3>Gods Unchained</h3>
                                         <h5>RPG</h5>
                                         <a href="#">View website</a>
                                     </div>
                                 </div>
                                 <div className="card">
                                     <div className="card-top">
-                                        <img src="https://meritcircle.io/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F6s34139m1605%2FXfZUBAdae7FjmqAJqldPn%2Fe724b76f67e3b132d4d19e8d44e553fc%2Fezgif-5-00ca3580ae.webp%3Ffm%3Dwebp%26h%3D540&w=1080&q=75"/>
+                                        <img src={process.env.PUBLIC_URL+"images/main/illuvium.png"}/>
                                         <label>Upcoming</label>
                                     </div>
                                     <div className="card-bottom">
-                                        <h3>Sidus Heroes</h3>
+                                        <h3>Illuvium</h3>
                                         <h5>RPG</h5>
                                         <a href="#">View website</a>
                                     </div>
                                 </div>
                                 <div className="card">
                                     <div className="card-top">
-                                        <img src="https://meritcircle.io/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F6s34139m1605%2FXfZUBAdae7FjmqAJqldPn%2Fe724b76f67e3b132d4d19e8d44e553fc%2Fezgif-5-00ca3580ae.webp%3Ffm%3Dwebp%26h%3D540&w=1080&q=75"/>
+                                        <img src={process.env.PUBLIC_URL+"images/main/staratlas.png"}/>
                                         <label>Upcoming</label>
                                     </div>
                                     <div className="card-bottom">
-                                        <h3>Sidus Heroes</h3>
+                                        <h3>Staratlas</h3>
                                         <h5>RPG</h5>
                                         <a href="#">View website</a>
                                     </div>
@@ -247,9 +247,7 @@ const Home = ()=>{
                     <Container>
                         <Row>
                             <div className="newsletter">
-                                <h2 className="main-title">
-                                Keep up to date.
-                                </h2>
+                                <h2 className="main-title">Keep up to date.</h2>
                                 <p className="para-text">
                                 Be the first to know what’s going on in our Metaverse.
                                 </p>

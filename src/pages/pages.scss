@@ -1,6 +1,6 @@
 $Roboto-family:"Roboto",sans-serif;
-$theme-blue-color:blue;
-$theme-orange-color:orange;
+$theme-blue-color:#2D6ACC;
+$theme-orange-color:#F44F20;
 $theme-red-color:red;
 $theme-black-color:#000;
 $theme-orange-gradient-color:#ffa50040;
@@ -11,8 +11,11 @@ $theme-orange-gradient-color:#ffa50040;
     letter-spacing: 0.01em;
     text-align: center;
     margin-bottom: 0;
+    @media (max-width:1024px) {
+        font-size: 1.2rem;
+    }
     @media (max-width:767px) {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 .main-title{
@@ -23,6 +26,9 @@ $theme-orange-gradient-color:#ffa50040;
     letter-spacing: -0.03em;
     text-align: center;
     color: $theme-blue-color;
+    @media (max-width:1024px) {
+        font-size: 3.5rem;
+    }
     @media (max-width:767px) {
         font-size: 2rem;
     }
@@ -99,32 +105,29 @@ $theme-orange-gradient-color:#ffa50040;
 }
 .home{
     .hero-section{
-        padding: 100px 0 0 0;
+        padding: 80px 0;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        h2{
-            font-family: $Roboto-family;
-            font-size: 5rem;
-            line-height: 1em;
-            font-weight: 900;
-            letter-spacing: -0.03em;
-            text-align: center;
+        @media (max-width:767px) {
+            padding: 40px 0;
+        }
+        .main-title{
             margin-bottom: 30px;
+            color: $theme-black-color;
             span{
-                color: $theme-blue-color;
-                background: linear-gradient(90deg, $theme-blue-color 19%, $theme-blue-color 76%);
+                background: rgb(45,106,204);
+background: linear-gradient(90deg, rgba(45,106,204,1) 50%, rgba(37,84,166,1) 70%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
             }
         }
-        p{
-            font-size: 1.6rem;
-            line-height: 1.3em;
-            letter-spacing: 0.01em;
+        .para-text{
             padding: 0 60px;
-            text-align: center;
+            @media (max-width:767px) {
+                padding: 0 10px;
+            }
         }
         .hero-animation{
             svg{
@@ -140,6 +143,9 @@ $theme-orange-gradient-color:#ffa50040;
         padding: 80px 0;
         background: linear-gradient(rgb(241, 241, 245) 0%, rgb(255, 255, 255) 74.78%, rgb(255, 255, 255) 100%), rgb(255, 255, 255);
         text-align: center;
+        @media (max-width:767px) {
+            padding: 40px 0;
+        }
         .main-title{
             padding: 0 50px;
             margin-bottom: 2.5rem;
@@ -155,6 +161,9 @@ $theme-orange-gradient-color:#ffa50040;
     .showcase-section{
         background-color: $theme-black-color;
         padding: 80px 0;
+        @media (max-width:767px) {
+            padding: 40px 0;
+        }
         .main-title{
             padding: 0 50px;
             margin-bottom: 30px;
@@ -163,9 +172,15 @@ $theme-orange-gradient-color:#ffa50040;
             padding: 0 50px;
             color: #fff;
             margin-bottom: 60px;
+            @media (max-width:767px) {
+                padding: 0 10px;
+            }   
         }
         .showcase-inner{
             margin-bottom: 30px;
+            @media (max-width:767px) {
+                text-align: center;
+            }
             .showcase-card{
                 h5{
                     color: #fff;
@@ -197,9 +212,17 @@ $theme-orange-gradient-color:#ffa50040;
                 margin-bottom: 30px;
                 text-align: left;
                 padding-left: 0;
+                @media (max-width:767px) {
+                    text-align: center;
+                    padding: 0 10px;
+                    font-size: 28px;
+                }
             }
             .games-slider{
                 padding: 0 20px;
+                @media (max-width:767px) {
+                    padding: 0 40px;
+                }
                 .slick-slide{
                     > div{
                         margin: 0 10px;
@@ -232,6 +255,7 @@ $theme-orange-gradient-color:#ffa50040;
                             padding: 3px 10px;
                             bottom: 10px;
                             left: 10px;
+                            font-size: 14px;
                         }
                     }
                     .card-bottom{
@@ -259,24 +283,39 @@ $theme-orange-gradient-color:#ffa50040;
         padding: 80px 0;
         background-color: rgb(241, 241, 245);
         text-align: center;
+        @media (max-width:767px) {
+            padding: 40px 0;
+        }
         .main-title{
             margin-bottom: 30px;
         }
         .para-text{
             padding: 0 50px;
             margin-bottom: 40px;
+            @media (max-width:767px) {
+                padding: 0 10px;
+            }
         }
     }
     .news-section{
         padding: 80px 0;
+        @media (max-width:767px) {
+            padding: 40px 0;
+        }
         .main-title{
             font-size: 45px;
             font-weight: 600;
             margin-bottom: 30px;
             padding-left: 0;
+            @media (max-width:767px) {
+                font-size: 28px;
+            }
         }
         .news-slider{
             padding: 0 20px;
+            @media (max-width:767px) {
+                padding: 0 40px;
+            }
             .slick-slide{
                 > div{
                     margin: 0 10px;
@@ -301,6 +340,49 @@ $theme-orange-gradient-color:#ffa50040;
                     min-height: 300px;
                     object-fit: cover;
                     border-radius: 15px;
+                }
+            }
+        }
+    }
+    .newsletter-section{
+        .newsletter{
+            padding: 0 200px;
+            @media (max-width:1024px) {
+                padding: 0 200px;
+            }
+            @media (max-width:767px) {
+                padding: 40px 10px;
+            }
+            .main-title{
+                font-size: 28px;
+                margin-bottom: 10px;
+            }
+            .para-text{
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+            form{
+                display: flex;
+                position: relative;
+                input{
+                    padding: 10px 20px;
+                    width: 100%;
+                    border-right:none;
+                    border-radius:50px;
+                    border-left: 1px solid #ced4daa6;
+                    border-top: 1px solid #ced4daa6;
+                    border-bottom: 1px solid #ced4daa6;
+                    outline: none;
+                    background: rgba(240, 240, 240, 0.5);
+                }
+                button{
+                    position: absolute;
+                    content: "";
+                    right: 0;
+                    top: 1px;
+                    @media (max-width:767px) {
+                        padding: 12px 12px;
+                    }
                 }
             }
         }
@@ -419,5 +501,54 @@ $theme-orange-gradient-color:#ffa50040;
             border-radius: 4px;
             padding: 12px 15px;
         }
+    }
+}
+
+.games{
+    .games-section{
+        padding: 80px 0;
+        .main-title{
+            padding: 0 150px;
+            margin-bottom: 30px;
+        }
+        .para-text{
+            padding: 0 80px;
+        }
+    }
+    .games-detail-section{
+        .main-title{
+            margin-bottom: 30px;
+        }
+        .para-text{
+             margin-bottom: 50px;
+        }
+        img{
+            width: 100%;
+            border-radius: 25px;
+        }
+        .games-card{
+            .main-title{
+                text-align: left;
+                font-size: 30px;
+                display: flex;
+                align-items: center;
+            .games-label{
+                padding: 0 20px;
+                color: #000;
+                font-size: 12px;
+                text-transform: uppercase;
+                background: $theme-orange-color;
+                border-radius: 10px;
+                margin-left: 10px;
+                margin-bottom: 0;
+            }
+            }
+            .para-text{
+                text-align: left;
+                font-size: 16px;
+                margin-top: 20px;
+            }
+        }
+        
     }
 }

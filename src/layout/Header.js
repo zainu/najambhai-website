@@ -6,13 +6,16 @@ const Header = ()=>{
         <header className="header">
         <Navbar expand="lg">
             <Container>
-                <Navbar.Brand href="#home">Beem Light</Navbar.Brand>
+                <Navbar.Brand>
+                    <Link to='/'>
+                        <img src={process.env.PUBLIC_URL+"images/logo.png"}/>
+                    </Link>
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto justify-content-end">
                     <Nav.Link><Link to='/about'>About</Link></Nav.Link>
                     <Nav.Link><Link to='/games'>Games</Link></Nav.Link>
-                    <Nav.Link><Link to='/govern'>Governance</Link></Nav.Link>
                     <Nav.Link><Link to='/contact'>Contact</Link></Nav.Link>
                     <Nav.Link><Link to='/docs'>Documentation</Link></Nav.Link>
                     <Nav.Link><Link to='/stake'>Staking</Link></Nav.Link>
