@@ -57,7 +57,11 @@ $theme-orange-gradient-color:#ffa50040;
     }
 }
 
-
+.navbar{
+    @media (max-width:767px) {
+        border-bottom: 1px solid #ccc;
+    }
+}
 .header{
     .navbar{
         .navbar-collapse{
@@ -80,9 +84,17 @@ $theme-orange-gradient-color:#ffa50040;
 .footer{
     padding: 50px 0;
     background: rgba(255, 255, 255, 0.8);
+    @media (max-width:767px) {
+        padding: 0 0 20px 0;
+    }
     ul{
         &.site-map{
             list-style-type: none;
+            padding-left: 0;
+            @media (max-width:767px) {
+                text-align: center;
+                margin-bottom: 30px;
+            }
             h3{
                 color: #000;
                 margin-bottom: 0.8rem;
@@ -94,12 +106,55 @@ $theme-orange-gradient-color:#ffa50040;
                 display: block;
                 color: rgba(0, 0, 0, 0.5) !important;
                 font-weight: 500;
+                a{
+                    color: rgba(0, 0, 0, 0.5) !important;
+                    text-decoration: none;
+                }
             }
         }
         &.social-icons{
-            display: inline-block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             list-style-type: none;
-            margin-right: 10px;
+            padding: 20px 0 40px 0;
+            margin-bottom: 0;
+            @media (max-width:767px) {
+                padding: 0 0 20px 0;
+            }
+            li{
+                padding: 0 10px;
+                cursor: pointer;
+                a{
+                    color: rgba(0, 0, 0, 0.5) !important;
+                    text-decoration: none;
+                    svg{
+                        font-size: 30px;
+                        color: $theme-orange-color;
+                    }
+                }
+                
+            }
+        }
+        &.copyrights{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style-type: none;
+            margin-bottom: 0;
+            padding-left: 0;
+            @media (max-width:767px) {
+                flex-direction: column;
+                
+            }
+            li{
+                padding: 0 5px;
+                cursor: pointer;
+                a{
+                    color: $theme-orange-color;
+                    text-decoration: none;
+                }
+            }
         }
     }
 }
@@ -482,16 +537,130 @@ background: linear-gradient(90deg, rgba(45,106,204,1) 50%, rgba(37,84,166,1) 70%
     }
 }
 
+.team-page{
+    .team-title{
+        padding: 25px 0;
+        .main-title{
+            font-size: 36px;
+            color: $theme-blue-color;
+        }
+    }
+    .team-cards{
+        align-items: center;
+        position: relative;
+        @media (max-width:767px) {
+            margin-bottom: 20px;
+        }
+        .card-img-top{
+            border-radius: 50%;
+            border: 5px solid $theme-blue-color;
+            width: 140px;
+            height: 130px;
+            margin-top: 20px;
+            z-index: 1;
+            @media (max-width:767px) {
+                width: 140px;
+            }
+        }
+        .card-body{
+            padding-bottom: 0;
+            text-align: center;
+            z-index: 1;
+            h3{
+                font-family: $Roboto-family;
+                font-weight: 600;
+                color: $theme-blue-color;
+                font-size: 22px;
+                text-transform: uppercase;
+                min-height: 50px;
+                @media (max-width:767px) {
+                    min-height: 0;
+                }
+            }
+            h5{
+                font-family: $Roboto-family;
+                font-weight: 600;
+                color: $theme-blue-color;
+                font-size: 14px;
+                text-transform: uppercase;
+            }
+            p{
+                font-size: 12px;
+                &.general-info{
+                    min-height: 180px;
+                    @media (max-width:767px) {
+                        min-height: 0;
+                    }
+                }
+            }
+            ul{
+                display: flex;
+                justify-content: center;
+                list-style-type: none;
+                padding-left: 0;
+                li{
+                    padding: 0 5px;
+                    font-size: 25px;
+                    a{
+                        text-decoration: none;
+                        color: $theme-black-color;
+                    }
+                }
+            }
+        }
+        &:after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 85%;
+            background-color: $theme-orange-gradient-color;
+            bottom: 0;
+        }
+        &.advisor{
+            .card-body{
+                h3{
+                    min-height: 30px;
+                }
+            }
+            &:after{
+                height: 75%;
+            }
+        }
+        &.core-team{
+            .card-body{
+                h3{
+                    min-height: 30px;
+                }
+            }
+            &:after{
+                height: 70%;
+            }
+        }
+    }
+}
+
 .contact-page{
     padding: 100px 0;
+    @media (max-width:767px) {
+        padding: 40px 0;
+    }
     .contact-section{
         padding: 0 50px;
+        @media (max-width:767px) {
+            padding: 0;
+        }
         h2{
             margin-bottom: 30px;
+            @media (max-width:767px) {
+                margin-bottom: 20px;
+            }
         }
     }
     .contact-form{
         padding: 50px 50px 0;
+        @media (max-width:767px) {
+            padding: 40px 0;
+        }
         .form-control{
             border: 1px solid #ced4daa6;
             width: 100%;
@@ -501,30 +670,52 @@ background: linear-gradient(90deg, rgba(45,106,204,1) 50%, rgba(37,84,166,1) 70%
             border-radius: 4px;
             padding: 12px 15px;
         }
+        button{
+            @media (max-width:767px) {
+                width: 100%;
+            }
+        }
     }
 }
 
 .games{
     .games-section{
         padding: 80px 0;
+        @media (max-width:767px) {
+            padding: 40px 0;
+        }
         .main-title{
             padding: 0 150px;
             margin-bottom: 30px;
+            @media (max-width:767px) {
+                padding: 0 20px;
+                margin-bottom: 20px;
+            }
         }
         .para-text{
             padding: 0 80px;
+            @media (max-width:767px) {
+                padding: 0;
+            }
         }
     }
     .games-detail-section{
         .main-title{
             margin-bottom: 30px;
+            @media (max-width:767px) {
+                margin-bottom: 20px;
+            }
         }
         .para-text{
              margin-bottom: 50px;
+
         }
         img{
             width: 100%;
             border-radius: 25px;
+            @media (max-width:767px) {
+                margin-bottom: 15px;
+            }
         }
         .games-card{
             .main-title{
@@ -532,6 +723,10 @@ background: linear-gradient(90deg, rgba(45,106,204,1) 50%, rgba(37,84,166,1) 70%
                 font-size: 30px;
                 display: flex;
                 align-items: center;
+                @media (max-width:767px) {
+                    font-size: 22px;
+                    justify-content: center;
+                }
             .games-label{
                 padding: 0 20px;
                 color: #000;
@@ -547,6 +742,11 @@ background: linear-gradient(90deg, rgba(45,106,204,1) 50%, rgba(37,84,166,1) 70%
                 text-align: left;
                 font-size: 16px;
                 margin-top: 20px;
+                @media (max-width:767px) {
+                    font-size: 14px;
+                    margin-top: 0;
+                    text-align: center;
+                }
             }
         }
         

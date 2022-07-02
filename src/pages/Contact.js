@@ -39,7 +39,7 @@ const Contact = ()=>{
                         </Form.Group>
                         </Col>
                         <Col lg={12} md={12} className="d-flex justify-content-end">
-                        <Button variant="primary" type="submit">Submit</Button>
+                            <Button variant="primary" type="submit">Submit</Button>
                         </Col>
                     </Row>
                 </Form>
