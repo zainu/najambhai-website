@@ -7,8 +7,11 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from './pages/Contact';
 import Games from './pages/Games';
-import './App.scss';
 import Team from "./pages/Team";
+import Govern from "./pages/Govern";
+import Docs from "./pages/Docs";
+import './App.scss';
+
 function App() {
   return (
     <BrowserRouter>
@@ -18,6 +21,8 @@ function App() {
         <Route path="/team" element={<Team/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/games" element={<Games/>}/>
+        <Route path="/govern" element={<Govern/>}/>
+        <Route path="/docs" element={<Docs/>}/>
       </Routes>
     </BrowserRouter>
   );

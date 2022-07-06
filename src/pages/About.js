@@ -28,18 +28,16 @@ const About = ()=>{
                     <Row>
                         <Col lg={12} md={12} sm={12}>
                             <div className="team-section">
-                                <h2 className="main-title"><span>Light Beem</span> Team</h2>
+                                <h2 className="main-title"><span>GrowingOrbit</span> Team</h2>
                                 <p className="para-text">Our team professionals</p>
                             </div>
                         </Col>
                         <Col lg={3} md={3} sm={12}>
                             <Card className="team-cards">
-                                <Card.Img variant="top" src={process.env.PUBLIC_URL+"images/najam.png"} />
+                                <Card.Img variant="top" src={process.env.PUBLIC_URL+"images/profile/najam.png"} />
                                 <Card.Body>
                                     <h3>Najam Saeed</h3>
                                     <h5>CEO/Ops & GTM.</h5>
-                                    <p className="general-info">A Multi-disciplinary startup founder with over 12 years of working experience in marketing, business development, operation and start-ups. Extremely passionate about ending poverty and reducing income inequality.</p>
-                                    <p  className="company-info">Founder of Smartsoft, Labcloud & Orion.</p>
                                     <ul>
                                         <li>
                                             <a href="https://www.facebook.com/" target="_blank"><FaFacebookF/></a>
@@ -59,12 +57,10 @@ const About = ()=>{
                         </Col>
                         <Col lg={3} md={3} sm={12}>
                             <Card className="team-cards">
-                                <Card.Img variant="top" src={process.env.PUBLIC_URL+"images/cto.png"} />
+                                <Card.Img variant="top" src={process.env.PUBLIC_URL+"images/profile/affan.png"} />
                                 <Card.Body>
                                     <h3>Affan Ahmed khan</h3>
-                                    <h5>CTO</h5>
-                                    <p className="general-info">Blockchain Engineer from Pakistan, building exciting decentralized applications. Contributing to web3.0 Revolution by building various Dapps. Moreover, previously run startups named BitcoinPK and RetinaVR.And now currently running Blockchain agency named "DAPPOMATICS"</p>
-                                    <p className="company-info">BitcoinPK and RetinaVR, DAPPOMATICS</p>
+                                    <h5>Blockchain Developer</h5>
                                     <ul>
                                         <li>
                                             <a href="https://www.facebook.com/" target="_blank"><FaFacebookF/></a>
@@ -84,12 +80,10 @@ const About = ()=>{
                         </Col>
                         <Col lg={3} md={3} sm={12}>
                             <Card className="team-cards">
-                                <Card.Img variant="top" src={process.env.PUBLIC_URL+"images/cto.png"} />
+                                <Card.Img variant="top" src={process.env.PUBLIC_URL+"images/profile/omar.png"} />
                                 <Card.Body>
-                                    <h3>Affan Ahmed khan</h3>
-                                    <h5>CTO</h5>
-                                    <p className="general-info">Blockchain Engineer from Pakistan, building exciting decentralized applications. Contributing to web3.0 Revolution by building various Dapps. Moreover, previously run startups named BitcoinPK and RetinaVR.And now currently running Blockchain agency named "DAPPOMATICS"</p>
-                                    <p className="company-info">BitcoinPK and RetinaVR, DAPPOMATICS</p>
+                                    <h3>Omer Shafiq</h3>
+                                    <h5>Graphic Designer</h5>
                                     <ul>
                                         <li>
                                             <a href="https://www.facebook.com/" target="_blank"><FaFacebookF/></a>
@@ -109,12 +103,10 @@ const About = ()=>{
                         </Col>
                         <Col lg={3} md={3} sm={12}>
                             <Card className="team-cards">
-                                <Card.Img variant="top" src={process.env.PUBLIC_URL+"images/cto.png"} />
+                                <Card.Img variant="top" src={process.env.PUBLIC_URL+"images/profile/zain.png"} />
                                 <Card.Body>
-                                    <h3>Affan Ahmed khan</h3>
-                                    <h5>CTO</h5>
-                                    <p className="general-info">Blockchain Engineer from Pakistan, building exciting decentralized applications. Contributing to web3.0 Revolution by building various Dapps. Moreover, previously run startups named BitcoinPK and RetinaVR.And now currently running Blockchain agency named "DAPPOMATICS"</p>
-                                    <p className="company-info">BitcoinPK and RetinaVR, DAPPOMATICS</p>
+                                    <h3>Zain Zahoor</h3>
+                                    <h5>Front-end Developer</h5>
                                     <ul>
                                         <li>
                                             <a href="https://www.facebook.com/" target="_blank"><FaFacebookF/></a>

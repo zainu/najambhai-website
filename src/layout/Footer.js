@@ -46,8 +46,8 @@ const Footer = ()=>{
                         <h3>Docs</h3>
                         <li><a href="http://growingorbit.com/">FAQs</a></li>
                         <li><a href="http://growingorbit.com/">Medium</a></li>
-                        <li><a href="http://growingorbit.com/">Substack</a></li>
-                        <li><a href="http://growingorbit.com/">Gitbook</a></li>
+                        <li><a href="https://growingorbit.substack.com/" target="_blank">Substack</a></li>
+                        <li><a href="https://growingorbit.gitbook.io/growing-orbit" target="_blank">Gitbook</a></li>
                     </ul>
                 </Col>
                 <Col lg={2} md={2} sm={6} xs={6}>
@@ -55,18 +55,23 @@ const Footer = ()=>{
                         <h3>Contact</h3>
                         <li><Link to='/contact'>Contact Us</Link></li>
                         <li><Link to='/contact'>Get Support</Link></li>
-                        <li><a href="http://growingorbit.com/">Twitter</a></li>
-                        <li><a href="http://growingorbit.com/">Telegram</a></li>
+                        <li><a href="https://twitter.com/OrbitGrowing" target="_blank">Twitter</a></li>
+                        <li><a href="https://t.me/growingorbit" target="_blank">Telegram</a></li>
                     </ul>
                 </Col>
             </Row>
             <Row>
                 <Col lg={12} md={12}>
                     <ul className="social-icons">
-                        <li><a href="http://growingorbit.com/"><FaTwitter/></a></li>
-                        <li><a href="http://growingorbit.com/"><FaDiscord/></a></li>
-                        <li><a href="http://growingorbit.com/"><FaTelegramPlane/></a></li>
-                        <li><a href="http://growingorbit.com/"><FaMedium/></a></li>
+                        <li><a href="https://twitter.com/OrbitGrowing" target="_blank"><FaTwitter/></a></li>
+                        <li><a href="https://discord.gg/MDHRz8xwMm" target="_blank"><FaDiscord/></a></li>
+                        <li><a href="https://t.me/growingorbit" target="_blank"><FaTelegramPlane/></a></li>
+                        <li><a href="http://growingorbit.com/" target="_blank"><FaMedium/></a></li>
+                        <li>
+                            <a href="https://growingorbit.substack.com/" target="_blank">
+                                <img src={process.env.PUBLIC_URL+"images/substack.png"}/>
+                            </a>
+                        </li>
                     </ul>
                     <ul className="copyrights">
                         <li>2022 GrowingOrbit</li>

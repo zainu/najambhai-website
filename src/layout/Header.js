@@ -8,7 +8,7 @@ const Header = ()=>{
             <Container>
                 <Navbar.Brand>
                     <Link to='/'>
-                        GrowingOrbit
+                        <img src={process.env.PUBLIC_URL+"images/logo-new.png"}/>
                     </Link>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -20,8 +20,9 @@ const Header = ()=>{
                     </NavDropdown>
                     <Nav.Link><Link to='/games'>Games</Link></Nav.Link>
                     <Nav.Link><Link to='/contact'>Contact</Link></Nav.Link>
+                    <Nav.Link><Link to='/govern'>Governance</Link></Nav.Link>
                     <Nav.Link><Link to='/docs'>Documentation</Link></Nav.Link>
-                    <Nav.Link><Link to='/stake'>Staking</Link></Nav.Link>
+                    {/* <Nav.Link><Link to='/stake'>Staking</Link></Nav.Link> */}
                 </Nav>
                 </Navbar.Collapse>
             </Container>

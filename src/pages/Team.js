@@ -20,7 +20,7 @@ const Team = ()=>{
                         </Col>
                         <Col lg={3} md={3} sm={12}>
                             <Card className="team-cards">
-                                <Card.Img variant="top" src={process.env.PUBLIC_URL+"images/najam.png"} />
+                                <Card.Img variant="top" src={process.env.PUBLIC_URL+"images/profile/najam.png"} />
                                 <Card.Body>
                                     <h3>Najam Saeed</h3>
                                     <h5>CEO/Ops & GTM.</h5>
@@ -45,10 +45,10 @@ const Team = ()=>{
                         </Col>
                         <Col lg={3} md={3} sm={12}>
                             <Card className="team-cards">
-                                <Card.Img variant="top" src={process.env.PUBLIC_URL+"images/cto.png"} />
+                                <Card.Img variant="top" src={process.env.PUBLIC_URL+"images/profile/affan.png"} />
                                 <Card.Body>
                                     <h3>Affan Ahmed khan</h3>
-                                    <h5>CTO</h5>
+                                    <h5>Blockchain Developer</h5>
                                     <p className="general-info">Blockchain Engineer from Pakistan, building exciting decentralized applications. Contributing to web3.0 Revolution by building various Dapps. Moreover, previously run startups named BitcoinPK and RetinaVR.And now currently running Blockchain agency named "DAPPOMATICS"</p>
                                     <p className="company-info">BitcoinPK and RetinaVR, DAPPOMATICS</p>
                                     <ul>
@@ -79,10 +79,10 @@ const Team = ()=>{
                         </Col>
                         <Col lg={4} md={4} sm={12}>
                             <Card className="team-cards core-team core-team">
-                                <Card.Img variant="top" src={process.env.PUBLIC_URL+"images/najam.png"} />
+                                <Card.Img variant="top" src={process.env.PUBLIC_URL+"images/profile/affan.png"} />
                                 <Card.Body>
                                     <h3>Affan Ahmed khan</h3>
-                                    <h5>CTO</h5>
+                                    <h5>Blockchain Developer</h5>
                                     <ul>
                                         <li>
                                             <a href="https://www.facebook.com/" target="_blank"><FaFacebookF/></a>
@@ -102,7 +102,7 @@ const Team = ()=>{
                         </Col>
                         <Col lg={4} md={4} sm={12}>
                             <Card className="team-cards core-team">
-                                <Card.Img variant="top" src={process.env.PUBLIC_URL+"images/cto.png"} />
+                                <Card.Img variant="top" src={process.env.PUBLIC_URL+"images/profile/zain.png"} />
                                 <Card.Body>
                                     <h3>Zain Zahoor</h3>
                                     <h5>Front End Developer</h5>
@@ -125,7 +125,7 @@ const Team = ()=>{
                         </Col>
                         <Col lg={4} md={4} sm={12}>
                             <Card className="team-cards core-team">
-                                <Card.Img variant="top" src={process.env.PUBLIC_URL+"images/cto.png"} />
+                                <Card.Img variant="top" src={process.env.PUBLIC_URL+"images/profile/omar.png"} />
                                 <Card.Body>
                                     <h3>Omer Shafiq</h3>
                                     <h5>Graphic Designer</h5>
@@ -155,7 +155,7 @@ const Team = ()=>{
                         </Col>
                         <Col lg={3} md={3} sm={12}>
                             <Card className="team-cards advisor">
-                                <Card.Img variant="top" src={process.env.PUBLIC_URL+"images/najam.png"} />
+                                <Card.Img variant="top" src={process.env.PUBLIC_URL+"images/profile/bilal-bin-saqib.png"} />
                                 <Card.Body>
                                     <h3>Bilal Saqib</h3>
                                     <h5>Marketing & Community</h5>
@@ -178,7 +178,8 @@ const Team = ()=>{
                             </Card>
                         </Col>
                         <Col lg={3} md={3} sm={12}>
-                            <Card className="team-cards advisor">                          <Card.Img variant="top" src={process.env.PUBLIC_URL+"images/cto.png"} />
+                            <Card className="team-cards advisor">                          
+                            <Card.Img variant="top" src={process.env.PUBLIC_URL+"images/profile/sajjad-rehman.png"} />
                                 <Card.Body>
                                     <h3>Sajjad Rehman</h3>
                                     <h5>Games & Partnerships</h5>
@@ -201,7 +202,8 @@ const Team = ()=>{
                             </Card>
                         </Col>
                         <Col lg={3} md={3} sm={12}>
-                            <Card className="team-cards advisor">                          <Card.Img variant="top" src={process.env.PUBLIC_URL+"images/cto.png"} />
+                            <Card className="team-cards advisor">                          
+                            <Card.Img variant="top" src={process.env.PUBLIC_URL+"images/profile/altaf-qureshi.png"} />
                                 <Card.Body>
                                     <h3>Altaf Qureshi</h3>
                                     <h5>Legal Advisor</h5>
@@ -224,7 +226,8 @@ const Team = ()=>{
                             </Card>
                         </Col>
                         <Col lg={3} md={3} sm={12}>
-                            <Card className="team-cards advisor">                          <Card.Img variant="top" src={process.env.PUBLIC_URL+"images/cto.png"} />
+                            <Card className="team-cards advisor">                          
+                            <Card.Img variant="top" src={process.env.PUBLIC_URL+"images/profile/rehman-rafiq.png"} />
                                 <Card.Body>
                                     <h3>Rehman Rafiq</h3>
                                     <h5>Game Advisor</h5>

@@ -61,6 +61,14 @@ $theme-orange-gradient-color:#ffa50040;
     @media (max-width:767px) {
         border-bottom: 1px solid #ccc;
     }
+    .navbar-brand{
+        img{
+            max-width: 180px;
+            @media (max-width:767px) {
+                max-width: 160px;
+            }
+        }
+    }
 }
 .header{
     .navbar{
@@ -130,6 +138,11 @@ $theme-orange-gradient-color:#ffa50040;
                     text-decoration: none;
                     svg{
                         font-size: 30px;
+                        color: $theme-orange-color;
+                    }
+                    img{
+                        width: 100%;
+                        max-width: 25px;
                         color: $theme-orange-color;
                     }
                 }
