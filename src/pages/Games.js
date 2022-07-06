@@ -44,7 +44,7 @@ const Games = ()=>{
                         </Row>
                         <Row className="games-card">
                             <Col lg={12} md={12} sm={12}>
-                                <h2 className="main-title text-left">Syncity<span className="games-label">Live</span></h2>
+                                <h2 className="main-title text-left">Syncity<span className="games-label">Upcoming</span></h2>
                             </Col>
                             <Col lg={6} md={6} sm={12}>
                                 <img src={process.env.PUBLIC_URL+"images/games/syncity1.png"}/>
@@ -58,7 +58,7 @@ const Games = ()=>{
                         </Row>
                         <Row className="games-card">
                             <Col lg={12} md={12} sm={12}>
-                                <h2 className="main-title text-left">Illuvium <span className="games-label">Live</span></h2>
+                                <h2 className="main-title text-left">Illuvium <span className="games-label">Upcoming</span></h2>
                             </Col>
                             <Col lg={6} md={6} sm={12}>
                                 <img src={process.env.PUBLIC_URL+"images/games/illuvium-1.png"}/>

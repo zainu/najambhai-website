@@ -113,30 +113,30 @@ const Home = ()=>{
                                 <p>We are proudly managing gamers from Asia, Africa, Europe, South-America daily earnings rewards through playing various games</p>
                             </Col>
                             <Col lg={4} md={4} className="showcase-card">
-                                <h5>Total gamers</h5>
-                                <label>3750</label>
+                                <h5>New gamers this month</h5>
+                                <label>500</label>
                                 <p>We are proudly managing gamers from Asia, Africa, Europe, South-America daily earnings rewards through playing various games</p>
                             </Col>
                             <Col lg={4} md={4} className="showcase-card">
-                                <h5>Total gamers</h5>
-                                <label>3750</label>
+                                <h5>Our split</h5>
+                                <label>70:30</label>
                                 <p>We are proudly managing gamers from Asia, Africa, Europe, South-America daily earnings rewards through playing various games</p>
                             </Col>        
                         </Row>
                         <Row className="showcase-inner">
                             <Col lg={4} md={4} className="showcase-card">
-                                <h5>Total gamers</h5>
-                                <label>3750</label>
+                                <h5>Total games we play</h5>
+                                <label>50</label>
                                 <p>We are proudly managing gamers from Asia, Africa, Europe, South-America daily earnings rewards through playing various games</p>
                             </Col>
                             <Col lg={4} md={4} className="showcase-card">
-                                <h5>Total gamers</h5>
-                                <label>3750</label>
+                                <h5>Total USD earned</h5>
+                                <label>2M+</label>
                                 <p>We are proudly managing gamers from Asia, Africa, Europe, South-America daily earnings rewards through playing various games</p>
                             </Col>
                             <Col lg={4} md={4} className="showcase-card">
-                                <h5>Total gamers</h5>
-                                <label>3750</label>
+                                <h5>Asset under management</h5>
+                                <label>115M</label>
                                 <p>We are proudly managing gamers from Asia, Africa, Europe, South-America daily earnings rewards through playing various games</p>
                             </Col>        
                         </Row>
